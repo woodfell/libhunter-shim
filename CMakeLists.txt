@@ -24,6 +24,7 @@ target_include_directories(
 target_link_libraries(
     hunter-shim
     libhunter-message::hunter-message
+    libhunter-unrelated::hunter-unrelated
     )
 
 # Installation (https://github.com/forexample/package-example) {
@@ -79,3 +80,4 @@ install(
     NAMESPACE "${namespace}"
     DESTINATION "${config_install_dir}"
 )
+
