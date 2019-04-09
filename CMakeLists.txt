@@ -10,6 +10,8 @@ include(GNUInstallDirs)
 
 hunter_add_package(libhunter-message)
 find_package(libhunter-message CONFIG REQUIRED)
+hunter_add_package(libhunter-unrelated)
+find_package(libhunter-unrelated CONFIG REQUIRED)
 
 add_library(hunter-shim shim.c)
 
